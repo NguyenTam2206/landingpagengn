@@ -1,12 +1,15 @@
 <template>
   <div>
-    This is home page
-    <div>{{ $t('global').test }}</div>
+    <MainBanner />
   </div>
 </template>
 
 <script>
+import MainBanner from "@/components/MainBanner";
+
 export default {
-  name: "IndexPage"
+  components: {
+    MainBanner
+  }
 };
 </script>

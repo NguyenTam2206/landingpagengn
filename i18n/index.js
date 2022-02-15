@@ -9,9 +9,9 @@ const messages = {
 export const i18n = {
   strategy: "no_prefix",
   locales: ["vi", "en"],
-  defaultLocale: "en",
+  defaultLocale: "vi",
   vueI18n: {
-    fallbackLocale: "en",
+    fallbackLocale: "vi",
     messages
   }
 };

@@ -1,0 +1,15 @@
+:root {
+  --primary: #DD1337;
+  --secondary: #FFE5EA;
+}
+
+@font-face {
+  font-family: Lexend_Deca;
+  src: url("@/assets/media/font/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+  font-display: swap;
+}
+
+.v-application {
+  font-family: Lexend_Deca !important;
+  line-height: 1.5;
+}
