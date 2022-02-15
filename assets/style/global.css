@@ -13,3 +13,35 @@
   font-family: Lexend_Deca !important;
   line-height: 1.5;
 }
+
+.header-block {
+  font-size: 40px;
+  color: black;
+}
+
+.description-block {
+  font-size: 20px;
+  color: grey
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scroll {
+  overflow: scroll;
+}
+
+@media (max-width: 959px) {
+  .header-block {
+    font-size: 24px;
+  }
+  .description-block {
+    font-size: 16px;
+  }
+}

@@ -19,6 +19,16 @@ export const vi = {
       event: "Sự kiện",
       recruitment: "Tuyển dụng",
       contact: "Liên hệ"
+    },
+    brands: {
+      title: "THƯƠNG HIỆU",
+      description:
+        "Xây dựng mọi thứ bằng công nghệ từ truyền thông đến sản phẩm số như Website, App, được áp dụng mạnh mẽ."
+    },
+    investment: {
+      title: "ĐẦU TƯ & PHÁT TRIỂN",
+      description:
+        "Những kinh nghiệm cốt lỗi trong từng lĩnh vực giúp tôi có thể đi xa hơn trong nền công nghiệp công nghệ hiện nay và tương lai mai sau."
     }
   }
 };

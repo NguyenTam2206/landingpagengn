@@ -1,15 +1,20 @@
 <template>
   <div>
     <MainBanner />
+    <Brands class="mt-8" />
+    <InvestMent class="mt-8" />
   </div>
 </template>
 
 <script>
 import MainBanner from "@/components/MainBanner";
+import Brands from "@/components/Brands";
+import InvestMent from "@/components/InvestMent";
 
 export default {
   components: {
-    MainBanner
+    MainBanner,
+    Brands
   }
 };
 </script>
