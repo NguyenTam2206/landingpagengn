@@ -40,10 +40,24 @@
               </v-col>
               <v-col class="pa-0" cols="12" md="6">
                 <div class="content-right">
-                  {{item.text}}
-                  <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quaerat iste adipisci iure, ut et ex aut! Qui voluptate corrupti laboriosam, quod quia, nihil consectetur temporibus similique, natus ratione pariatur.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam autem architecto quo, exercitationem modi, facilis velit harum quos voluptatibus commodi laboriosam at aliquam necessitatibus iusto amet provident adipisci cumque magnam!
+                  <div class="py-8 px-12">
+                    <span class="big-brand">{{$t('homepage').brands.bigBrand}}</span>
+                    <span class="sub-brand">{{$t('homepage').brands[item.brand].brand}}</span>
+                    <div class="description">{{$t('homepage').brands[item.brand].description}}</div>
+                    <div class="mt-4">
+                      <ul>
+                        <li
+                          v-for="(text,i) in $t('homepage').brands[item.brand].detail"
+                          :key="i"
+                          class="detail-text"
+                        >{{text}}</li>
+                      </ul>
+                    </div>
+                    <v-btn
+                      @click="$router.push(item.linkTo)"
+                      class="mt-4"
+                      color="primary"
+                    >{{$t('homepage').brands.button}}</v-btn>
                   </div>
                 </div>
               </v-col>
@@ -83,23 +97,28 @@ export default {
       items: [
         {
           src: require("@/assets/media/images/brandimg1.png"),
-          text: "text1"
+          brand: "techupZone",
+          linkTo: "/"
         },
         {
           src: require("@/assets/media/images/brandimg2.png"),
-          text: "text2"
+          brand: "techupMedia",
+          linkTo: "/"
         },
         {
           src: require("@/assets/media/images/brandimg3.png"),
-          text: "text3"
+          brand: "techupTraining",
+          linkTo: "/"
         },
         {
           src: require("@/assets/media/images/brandimg4.png"),
-          text: "text4"
+          brand: "techupCapital",
+          linkTo: "/"
         },
         {
           src: require("@/assets/media/images/brandimg5.png"),
-          text: "text5"
+          brand: "techupCorporation",
+          linkTo: "/"
         }
       ]
     };
@@ -128,6 +147,10 @@ export default {
   border: solid 2px #ccc;
   padding: 0;
   margin: 0;
+  background-image: url("../../assets/media/images/backgroundbrand.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .image-left {
   border-radius: 10px;
@@ -137,6 +160,23 @@ export default {
 .content-right {
   border-radius: 10px;
   width: 100%;
+}
+.big-brand {
+  color: Black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.sub-brand {
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: bold;
+}
+.description {
+  color: black;
+  font-size: 20px;
+}
+.detail-text {
+  color: grey;
 }
 @media (max-width: 959px) {
   .frame {
