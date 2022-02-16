@@ -135,6 +135,11 @@ export const vi = {
           "Top những bản nhạc được chọn lọc"
         ]
       }
+    },
+    partner: {
+      title: "ĐỐI TÁC CHIẾN LƯỢC",
+      description:
+        "Những đối tác đã hợp tác cùng chúng tôi, chung tay xây dựng hệ thông công nghệ lớn mạnh"
     }
   }
 };
