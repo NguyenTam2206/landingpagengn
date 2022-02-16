@@ -74,6 +74,67 @@ export const vi = {
       title: "ĐẦU TƯ & PHÁT TRIỂN",
       description:
         "Những kinh nghiệm cốt lỗi trong từng lĩnh vực giúp tôi có thể đi xa hơn trong nền công nghiệp công nghệ hiện nay và tương lai mai sau."
+    },
+    productPresent: {
+      title: "CHI TIẾT SẢN PHẨM",
+      description:
+        "Những sản phẩm mang lại sự thuận lợi và góp phần xây dựng cuộc sống dễ dàng hơn cho chúng ta.",
+      button: "Chi tiết ứng dụng",
+      product0: {
+        title: "App BHTD - Bán Hàng Toàn Diện",
+        detail: [
+          "Một triêu bài hát trên thê giới",
+          "Cửa hàng âm nhạc cá nhân",
+          "Sở hữu những bảng nhạc bản quyền",
+          "Âm thanh chất lượng",
+          "Âm nhạc theo xu hướng",
+          "Top những bản nhạc được chọn lọc"
+        ]
+      },
+      product1: {
+        title: "App Mstore Quản lý Kho Hàng",
+        detail: [
+          "Tạo cửa hàng cá nhân",
+          "Nhận thông báo kho hàng",
+          "Tạo sản phẩm mới",
+          "Liên kết mạng xã hội",
+          "Quản lý kho hàng",
+          "Kiểm tra hàng tồn kho"
+        ]
+      },
+      product2: {
+        title: "App MUSIC Thư Giản Mọi Lúc",
+        detail: [
+          "Một triêu bài hát trên thê giới",
+          "Cửa hàng âm nhạc cá nhân",
+          "Sở hữu những bảng nhạc bản quyền",
+          "Âm thanh chất lượng",
+          "Âm nhạc theo xu hướng",
+          "Top những bản nhạc được chọn lọc"
+        ]
+      },
+      product3: {
+        title: "App BUSINESS CCEO Namecard doanh nhân",
+        detail: [
+          "Đăng ký tài khoản Doanh Nhân và DN",
+          "Lưu, quản lí danh bạ đối tác kinh doanh",
+          "Trao đổi nhu cầu giao thương hợp tác",
+          "Tham gia sự kiện Doanh nghiệp, Doanh Nhân",
+          "Kết nối hợp tác Doanh Nhân Thế Giới",
+          "Doanh Nghiệp phát triển toàn câu"
+        ]
+      },
+      product4: {
+        title: "App Fooder Đặt Hàng Mọi Lúc",
+        detail: [
+          "Một triêu bài hát trên thê giới",
+          "Cửa hàng âm nhạc cá nhân",
+          "Sở hữu những bảng nhạc bản quyền",
+          "Âm thanh chất lượng",
+          "Âm nhạc theo xu hướng",
+          "Top những bản nhạc được chọn lọc"
+        ]
+      }
     }
   }
 };
