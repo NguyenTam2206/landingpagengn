@@ -1,5 +1,5 @@
 <template>
-  <div class="wraper">
+  <div>
     <div class="text-center mx-auto pt-8" style="max-width : 750px;">
       <div class="header-block">{{$t('homepage').productPresent.title}}</div>
       <div class="description-block">{{$t('homepage').productPresent.description}}</div>
@@ -82,11 +82,6 @@ export default {
 </script>
 
 <style scoped>
-.wraper {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .main-title {
   color: var(--primary);
   font-size: 30px;

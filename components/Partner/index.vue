@@ -4,14 +4,7 @@
       <div class="header-block">{{$t('homepage').partner.title}}</div>
       <div class="description-block">{{$t('homepage').partner.description}}</div>
     </div>
-    <v-carousel
-      v-model="model"
-      hide-delimiters
-      cycle
-      height="100vh"
-      hide-delimiter-background
-      :show-arrows="false"
-    >
+    <v-carousel hide-delimiters cycle height="100vh" hide-delimiter-background :show-arrows="false">
       <v-carousel-item>
         <div class="carousel-item-wrapped">
           <img

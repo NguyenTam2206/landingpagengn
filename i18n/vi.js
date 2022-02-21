@@ -140,6 +140,11 @@ export const vi = {
       title: "ĐỐI TÁC CHIẾN LƯỢC",
       description:
         "Những đối tác đã hợp tác cùng chúng tôi, chung tay xây dựng hệ thông công nghệ lớn mạnh"
+    },
+    contact: {
+      title: "LIÊN HỆ VỚI CHÚNG TÔI",
+      description:
+        "Bạn có ý tưởng, bạn có khát vọng xây dựng điều gì đó tốt đẹp cho đất nước cho loài người, hay bạn muốn đầu tư vào công nghệ tương lại. Hãy liên hệ với chúng tôi ngay!"
     }
   }
 };
