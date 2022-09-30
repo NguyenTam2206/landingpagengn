@@ -8,7 +8,7 @@
       <v-carousel-item>
         <div class="carousel-item-wrapped">
           <img
-            :src="require(`@/assets/media/images/Partner.png`)"
+            :src="require(`@/assets/media/images/newpartner.png`)"
             class="img"
             width="100"
             height="100"

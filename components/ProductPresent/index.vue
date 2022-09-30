@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="text-center mx-auto pt-8" style="max-width : 750px;">
-      <div class="header-block">{{$t('homepage').productPresent.title}}</div>
-      <div class="description-block">{{$t('homepage').productPresent.description}}</div>
+      <div class="header-block">Chương trình khuyến mãi</div>
+      <div
+        class="description-block"
+      >Nhằm mục đích hỗ trợ, khuyến khích các doanh nghiệp, tổ chức sử dụng sản phẩm dịch vụ số trong lĩnh vực an toàn thông tin mạng trong quá trình chuyển đổi số với chi phí hợp lý, Công ty NGN đề xuất chương trình khuyến mãi như sau:</div>
     </div>
 
     <v-carousel

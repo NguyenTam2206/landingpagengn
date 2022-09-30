@@ -1,5 +1,7 @@
 <template>
-  <img :src="require('@/assets/media/images/logo.png')" class="logo" alt />
+  <div class="mt-1">
+    <img :src="require('@/assets/media/ngn/ngn-logo.svg')" class="logo" alt />
+  </div>
 </template>
 
 <style scoped>

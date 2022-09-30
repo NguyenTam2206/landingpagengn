@@ -4,7 +4,7 @@
 
     <div class="banner-content">
       <v-container>
-        <div :style="$device.isDesktop ? 'max-width : 45%' : 'max-width : 100%'">
+        <!-- <div :style="$device.isDesktop ? 'max-width : 45%' : 'max-width : 100%'">
           <div class="text-carousel">
             <span>{{$t('homepage').carousel[`text${model + 1}`]}}</span>
             <span class="font-weight-bold">{{$t('homepage').carousel[`text${model + 1}Bold`]}}</span>
@@ -14,8 +14,8 @@
           @click="$router.push(banners[model].linkTo)"
           class="mt-8"
           color="primary"
-        >{{$t('homepage').carousel[`button${model + 1}`]}}</v-btn>
-        <div class="d-flex mt-8">
+        >{{$t('homepage').carousel[`button${model + 1}`]}}</v-btn>-->
+        <!-- <div class="d-flex mt-8">
           <div
             v-for="(banner,i) in banners"
             :key="i"
@@ -23,7 +23,7 @@
             @click="model = i"
             :style="model === i ? 'background: var(--primary);' : 'background : #a7a7a77a'"
           ></div>
-        </div>
+        </div>-->
       </v-container>
     </div>
 
@@ -38,10 +38,19 @@
       <v-carousel-item v-for="(banner, i) in banners" :key="i">
         <div class="carousel-item-wrapped">
           <img
-            :src="require(`@/assets/media/images/homepage${i + 1}.png`)"
+            :src="require(`@/assets/media/ngn/homepage1.png`)"
             class="img"
             width="100"
             height="100"
+            v-if="$device.isDesktop"
+            alt
+          />
+          <img
+            :src="require(`@/assets/media/ngn/2.png`)"
+            class="img"
+            width="100"
+            height="100"
+            v-if="$device.isMobile"
             alt
           />
         </div>
@@ -63,13 +72,13 @@ export default {
       banners: [
         {
           linkTo: "/1"
-        },
-        {
-          linkTo: "/2"
-        },
-        {
-          linkTo: "/3"
         }
+        // {
+        //   linkTo: "/2"
+        // },
+        // {
+        //   linkTo: "/3"
+        // }
       ]
     };
   }

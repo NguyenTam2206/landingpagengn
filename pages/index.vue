@@ -1,11 +1,20 @@
 <template>
   <div>
     <MainBanner />
-    <Brands class="mt-8" />
-    <InvestMent class="mt-8" />
-    <ProductPresent class="mt-8" />
-    <Partner class="mt-8" />
-    <Contact class="mt-8" />
+    <InvestMent class="mt-8" id="event" />
+    <Contact class="mt-8" id="contact" />
+    <!-- <ProductPresent class="mt-8" /> -->
+    <img
+      id="partner"
+      v-if="$device.isDesktop"
+      class="mt-8"
+      style="width:100%; height: 200px;"
+      :src="require(`@/assets/media/ngn/certi.png`)"
+      alt
+    />
+    <Partner v-if="$device.isDesktop" class="mt-8" />
+
+    <!-- <Brands class="mt-8" /> -->
   </div>
 </template>
 

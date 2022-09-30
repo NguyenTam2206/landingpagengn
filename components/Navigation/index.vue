@@ -2,20 +2,24 @@
   <div class="wraper">
     <v-container v-if="$device.isDesktop">
       <div class="d-flex justify-space-between">
-        <Logo style="width : 120px;" />
+        <div @click="handleClickLogo" style="cursor:pointer">
+          <Logo style="width : 120px;" />
+        </div>
         <div class="d-flex align-center">
           <div v-for="(item,i) in navigation" :key="i">
             <a :href="item.linkTo" class="navi-item">{{item.text}}</a>
           </div>
-          <LangOption />
+          <!-- <LangOption /> -->
         </div>
       </div>
     </v-container>
     <v-container v-if="!$device.isDesktop">
       <div class="d-flex justify-space-between align-center">
-        <v-app-bar-nav-icon color="white" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-        <Logo style="width : 80px;" />
-        <LangOption />
+        <!-- <v-app-bar-nav-icon color="white" @click.stop="drawer = !drawer"></v-app-bar-nav-icon> -->
+        <div @click="handleClickLogo" style="cursor: pointer">
+          <Logo style="width : 80px;" />
+        </div>
+        <!-- <LangOption /> -->
       </div>
     </v-container>
     <v-navigation-drawer v-model="drawer" fixed temporary bottom>
@@ -54,38 +58,44 @@ export default {
 
     return {
       navigation: [
-        {
-          text: home,
-          linkTo: "/"
-        },
-        {
-          text: brand,
-          linkTo: "/"
-        },
-        {
-          text: product,
-          linkTo: "/"
-        },
-        {
-          text: partner,
-          linkTo: "/"
-        },
+        // {
+        //   text: home,
+        //   linkTo: "/"
+        // },
+        // {
+        //   text: brand,
+        //   linkTo: "/"
+        // },
         {
           text: event,
-          linkTo: "/"
-        },
-        {
-          text: recruitment,
-          linkTo: "/"
+          linkTo: "#event"
         },
         {
           text: contact,
-          linkTo: "/"
+          linkTo: "#contact"
+        },
+        // {
+        //   text: product,
+        //   linkTo: "#product"
+        // },
+        {
+          text: partner,
+          linkTo: "#partner"
         }
+
+        // {
+        //   text: recruitment,
+        //   linkTo: "/"
+        // },
       ],
       drawer: false,
       group: null
     };
+  },
+  methods: {
+    handleClickLogo() {
+      window.open("https://ngn.vn");
+    }
   },
   watch: {
     group() {
@@ -102,7 +112,7 @@ export default {
 .navi-item {
   margin-right: 20px;
   text-decoration: none;
-  color: white;
+  color: green;
 }
 .navi-item:hover {
   color: var(--primary);
